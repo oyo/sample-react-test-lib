@@ -1,9 +1,13 @@
 {
-  "name": "@oyo/sample-react-test-lib",
-  "version": "0.0.1",
+  "name": "@catena-x/sample-react-test-lib",
+  "version": "0.0.2",
   "description": "test library",
   "author": "Martin Rohrmeier <rohrmeier@web.de>",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oyo/sample-react-test-lib.git"
+  },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
@@ -36,6 +40,7 @@
     "jest": "^28.1.3",
     "jest-environment-jsdom": "^29.5.0",
     "postcss": "^8.4.22",
+    "prettier": "2.8.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^2.60.0",
@@ -48,9 +53,10 @@
     "webpack": "^5.79.0"
   },
   "scripts": {
-    "build:lib": "echo DEPRECATED - use yarn:build && yarn:build",
-    "start:storybook": "echo DEPRECATED - use yarn:start && yarn start",
+    "build:lib": "echo DEPRECATED - use \"yarn build\" && yarn build",
+    "start:storybook": "echo DEPRECATED - use \"yarn start\" && yarn start",
     "build:storybook": "storybook build",
+    "pretty": "prettier --write \"./src/**/*.{ts,tsx,js,jsx,json,css,sass,scss,xml,md}\"",
     "test": "jest",
     "test:ci": "CI=true jest",
     "start": "storybook dev -p 3004",
