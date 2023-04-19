@@ -63,7 +63,7 @@
     "build:lib": "echo DEPRECATED - use \"yarn build\" && yarn build",
     "start:storybook": "echo DEPRECATED - use \"yarn start\" && yarn start",
     "build:storybook": "storybook build",
-    "pretty": "prettier --write \"./src/**/*.{ts,tsx,js,jsx,json,css,sass,scss,xml,md}\"",
+    "pretty": "prettier --write \"./src/**/*.{ts,tsx,js,jsx,json,css,sass,scss,xml,md}\" \"./*.{ts,tsx,js,jsx,json,css,sass,scss,xml,md}\"",
     "lint": "yarn run eslint \"./src/**/*.{ts,tsx}\"",
     "test": "jest",
     "test:ci": "CI=true jest",
