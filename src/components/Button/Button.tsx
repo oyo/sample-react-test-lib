@@ -1,13 +1,18 @@
 import React from 'react'
 import './Button.scss'
+import Button from '@mui/material/Button'
 
 export interface ButtonProps {
   label: string
   onClick?: (e: React.MouseEvent<HTMLElement>) => void
 }
 
-const Button: React.FC<ButtonProps> = ({ label, onClick }: ButtonProps) => {
-  return <button onClick={onClick}>{label}</button>
+const CXButton: React.FC<ButtonProps> = ({ label, onClick }: ButtonProps) => {
+  return (
+    <div className="button>">
+      <Button onClick={onClick}>{label}</Button>
+    </div>
+  )
 }
 
-export default Button
+export default CXButton
